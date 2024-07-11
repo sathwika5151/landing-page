@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationery Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Welcome to Stationery World</h1>
+            <p>Welcome to our stationery haven, where convenience meets quality. We pride ourselves as your ultimate destination for all things stationery, offering a diverse range of products that cater to every need—from essential school supplies to sophisticated office essentials and creative tools like markers and notebooks. Our commitment extends beyond mere variety; it's about ensuring each item meets high standards of durability, functionality, and aesthetic appeal. Whether you're stocking up for daily tasks or seeking specialized tools, our store is designed to be your trusted partner, providing expert guidance and a seamless shopping experience. Explore our collection and discover why we're more than just a shop; we're your reliable source for all your stationery needs.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We provide high-quality stationery products for all your needs. Our goal is to offer a wide range of stationery items that combine quality and affordability. From school supplies to office essentials, we've got you covered!</p>
+        </section>
+
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <h3>Notebooks</h3>
+                    <img src="C:\Users\sathw\OneDrive\Desktop\landing page\books.jpg" alt="Notebooks">
+                    <p>High-quality notebooks in various sizes and designs.</p>
+                </div>
+                <div class="product-item">
+                    <h3>Pens</h3>
+                    <img src="C:\Users\sathw\OneDrive\Desktop\landing page\pens.jpg" alt="Pens">
+                    <p>Wide range of pens for all your writing needs.</p>
+                </div>
+                <div class="product-item">
+                    <h3>Pencils</h3>
+                    <img src="C:\Users\sathw\OneDrive\Desktop\landing page\pencils.jpg" alt="Pencils">
+                    <p>Durable and reliable pencils for everyday use.</p>
+                </div>
+                <div class="product-item">
+                    <h3>Markers</h3>
+                    <img src="markers.jpg" alt="Markers">
+                    <p>Colorful markers for creative projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: stationeryworld@gmail.com</p>
+            <p>Phone: +91 7013672699</p>
+        </section>
+
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm" onsubmit="return handleLogin();">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Stationery World. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function handleLogin() {
+            // Simulate login functionality (replace with actual login logic)
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Example: Check if username and password are valid
+            if (username === 'sathwika' && password === '1234') {
+                // Redirect to home section
+                window.location.href = '#home';
+                alert('Login successful!'); // Optional: Show a success message
+                return false; // Prevent form submission
+            } else {
+                alert('Invalid username or password. Please try again.');
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</body>
+</html>
